@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: rgba(246, 214, 214, 1);
+  --second-color: rgba(246, 247, 196, 1);
+  --accent-color: rgba(161, 238, 189, 1);
+  --font-color: rgba(123, 211, 234, 1);
+}
+
+body {
+  background-color: var(--main-color);
+  height: 100vh;
+  color: white;
+  padding: 120px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+main > hr {
+  border: solid 2px var(--font-color);
+  width: 80%;
+}
+
+main > h1 {
+  color: var(--font-color);
+}
+
+#container {
+  background-color: var(--second-color);
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: 2px 4px 5px var(--font-color);
+}
+
+table {
+  width: 90%;
+  margin: 10px auto;
+}
+
+td {
+  width: 45%;
+  height: 30px;
+  background-color: var(--accent-color);
+  text-align: center;
+}
+
+input,
+button {
+  outline: none;
+  color: white;
+  width: 69%;
+  height: 25px;
+  background-color: var(--accent-color);
+  border: solid 2px var(--font-color);
+  border-radius: 5px;
+  transition: all 0.2s linear;
+}
+
+button {
+  width: 26%;
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+button:hover,
+input:hover {
+  background-color: var(--font-color);
+}
+
+#search-container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 5px 10px 5px 5px;
+  display: flex;
+  gap: 5px;
+}
+
+#preview {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 80%;
+  gap: 5px;
+  margin: 0 auto;
+  color: var(--font-color);
+}
+
+ul {
+  display: flex;
+  gap: 5px;
+  padding: 0 0;
+  height: 100%;
+}
+
+.stat {
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  background-color: aqua;
+  color: white;
+  font-weight: 700;
+}
+
+#sprite {
+  object-fit: cover;
+  height: 150px;
+  margin: 0 auto;
+}
+
+span {
+  font-weight: 800;
+}
+
+#pokemon-name {
+  font-size: 1.3rem;
+}

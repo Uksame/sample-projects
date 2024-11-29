@@ -1,0 +1,116 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  
+}
+
+
+@media (max-width: 800px) {
+  body {
+    font-size: 1.5rem;
+  }
+  #navbar {
+    font-size: small;
+  }
+
+  #navbar header {
+    font-size: medium;
+    max-height: 50px;
+  }
+}
+
+body {
+  font-family: "Tahoma";
+  display: flex;
+  height: 100vh;
+  color: rgba(0,0,0,.6);
+}
+
+#navbar {
+  min-width: fit-content;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.indexes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#navbar header {
+  min-height: 120px;
+  text-align: center;
+  padding: 10%;
+  border-bottom: 2px solid black;
+}
+
+.indexes li {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 5% 5%;
+}
+
+#main-doc {
+  border-left: 2px solid black;
+  margin-left: 20px;
+  line-height: 1.5;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+
+section {
+  font-size: 1rem;
+  width: 100%;
+  padding: 10px 60px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+header {
+  color: #000;
+  width: 100%;
+  min-height: 40px;
+  font-size: 1.9rem;
+}
+
+ul {
+  padding-left: 5%;
+  margin: 5px 0;
+}
+li {
+  margin: 5px;
+}
+
+p {
+  margin: 14px 30px;
+  padding-left: 10px;
+  width: 100%;
+  text-align: start;
+}
+
+code {
+  text-align: start;
+  background-color: rgba(222, 219, 219, 0.451);
+  padding: 14px 5%;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  margin: 10px auto;
+}
